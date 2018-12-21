@@ -14,7 +14,6 @@ public class AppointmentController {
     AppointmentService appointmentService;
 
     @PostMapping(value = "/save")
-    public @ResponseBody
     void saveAppointment(@RequestBody() Appointment appointment){
 
         System.out.println(appointmentService.saveAppointment(appointment) + "saved-------------");
